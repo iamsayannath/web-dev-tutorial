@@ -65,9 +65,9 @@ const youth = youthNess(myAge);
 console.log(`Based on the given age - ${myAge}, the person is ${youth}`)
 
 // back ticks help us create multi-line strings
-// console.log(` Hello
-//     World
-//     `);
+console.log(` Hello
+    World
+    `);
 
-// // \n is a newline character
-// console.log("Hello\nWorld")
+// \n is a newline character
+console.log("Hello\nWorld")
