@@ -16,7 +16,7 @@
 
 // For loop
 
-const numbers = [10,20,30,40,50,60,"hello"];
+
 // console.log(numbers.length)
 
 // Loop through a list of indices - 0,1,2,3,4,5
@@ -38,9 +38,15 @@ const numbers = [10,20,30,40,50,60,"hello"];
 // }
 
 // // for of loop
+const numbers = [10,20,30,40,50,60,"hello"];
+
 // for (let num of numbers){
 //     console.log(num)
-//     console.log(typeof num)
+// }
+
+// // in essentialluy iterates over the index
+// for (let num in numbers){
+//     console.log(num);
 // }
 
 // We can iterate over objects
@@ -83,18 +89,14 @@ const person = {
 
 // Iterate over arrays, objects, array of objects
 // forEach 
-const userActions = [
-    { action: 'login', timestamp: '2024-08-11T10:00:00Z' },
-    { action: 'purchase', timestamp: '2024-08-11T10:05:00Z' },
-    { action: 'logout', timestamp: '2024-08-11T10:10:00Z' }
-];
+
 
 // forEach - iterable.forEach(callback function)
 // Callback function is simply a function which is passed as an argument to another function
-// userActions.forEach(action => {
-//     console.log(action.action = action.action.toUpperCase())
-//     console.log(action.timestamp)
-// })
+userActions.forEach(action => {
+    console.log(action.action = action.action.toUpperCase())
+    console.log(action.timestamp)
+})
 
 // userActions.forEach((action,index) => {
 //     console.log(action.action = action.action.toUpperCase())
@@ -110,16 +112,71 @@ const userActions = [
 // }
 // });
 
-const actionOne = userActions[0]
-console.log(actionOne)
-// 
-// actionOne.forEach((value,key) => {
-//     console.log(value)
+// const actionOne = userActions[0]
+// console.log(actionOne)
+// // 
+// // actionOne.forEach((value,key) => {
+// //     console.log(value)
+// // })
+// //
+// console.log(Object.entries(actionOne))
+
+// Object.entries(actionOne).forEach(elem => {
+//     console.log(`The key of this action is ${elem[0]} and the value is ${elem[1]}`)
 // })
-//
-console.log(Object.entries(actionOne))
 
-Object.entries(actionOne).forEach(elem => {
-    console.log(`The key of this action is ${elem[0]} and the value is ${elem[1]}`)
-})
+// while loop
+// let idx = userActions.length - 1
+// while (idx >= 0 ){
+//     console.log(userActions[idx])
+//     idx--
+// }
 
+// sum of positive numbers only
+const myNumbers = [10, -15, 9, 11, -12, 30, -6]
+
+// need to calculate sum of positive numbers 
+let totalSum = 0
+let index = 0;
+
+// while (index < myNumbers.length){
+//     const num = myNumbers[index]
+//     if (num > 0){
+//         sum += num
+//     }
+//     index++
+// }
+
+
+
+// do while 
+// do {
+//     const num = myNumbers[index]
+//     if (num > 0){
+//         totalSum += num
+//     }
+//     index++
+// } while (index < myNumbers.length)
+
+// console.log(`The sum of all the numbers in my array is ${totalSum}`)
+
+
+// Another do while loop
+const userActions = [
+    { action: 'login', timestamp: '2024-08-11T10:00:00Z' },
+    { action: 'purchase', timestamp: '2024-08-11T10:05:00Z' },
+    { action: 'logout', timestamp: '2024-08-11T10:10:00Z' }
+];
+
+let indx = 0;
+
+do {
+    myObj = userActions[indx]
+    if (myObj.action !== 'logout'){
+        console.log("the user is still logged in")
+    }
+    indx++
+
+} while (indx < userActions.length)
+
+console.log(!'')
