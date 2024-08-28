@@ -6,14 +6,23 @@
 // what is a function - a function reprsents some operation where it takes some input, does something on the input, return some output
 
 // Write a function which takes two parameters - number, power
-function calculatePower(number,power){
-    return number**power
+const calculatePower = (number,power) => {
+    number**power
 }
 const cubeOfThree = Math.round(calculatePower(7,0.5))
 // console.log(cubeOfThree)
 
 
 // Write a function which will generate a random password of a defined length
+const someValue = calculatePower(8,2)
+console.log(someValue)
+
+// What else do we need
+const allowedLength = 10
+const includeLowerCase = true
+const includeUpperCase = false
+const includeNumbers = true
+const includeSymbols = false
 
 function generateRandomPassword(length,includeLowerCase,includeUpperCase,includeNumbers,includeSymbols){
     
@@ -47,23 +56,33 @@ function generateRandomPassword(length,includeLowerCase,includeUpperCase,include
     for(i=0; i < length;i++){
 
         // generate random index, floor will give the greatest integer less than a particular value
+        // draw a random element/character from my allowedChars
         const randomIndex = Math.floor(Math.random()*allowedChars.length)
-        console.log(randomIndex)
         password += allowedChars[randomIndex]
     }
 
     return password
 }
 
-// What else do we need
-const allowedLength = 28
-const includeLowerCase = true
-const includeUpperCase = false
-const includeNumbers = true
-const includeSymbols = false
-
 // to generate a password
 const password = generateRandomPassword(allowedLength,includeLowerCase,includeUpperCase,includeNumbers,includeSymbols)
 console.log(`The generated password is ${password}`)
 
 // Write a function to generate IPv4
+
+// Looking into the call stack
+function first(){
+    console.log("Executing the first function")
+    second()
+}
+
+function second(){
+    console.log("Executing the second function")
+    third()
+}
+
+function third(){
+    console.log("Executing the third function")
+}
+
+first()

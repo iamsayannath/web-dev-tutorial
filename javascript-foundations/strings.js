@@ -49,9 +49,11 @@ const emailData = "I have a list of emails of participants for our seminar - vik
 const myEmails = emailData.match(emailRegex)
 console.log(Array.from(myEmails).map((array) => array))
 
-const phoneRegex = /\b[0-9]{10}\b/g;
+const phoneRegex = /\b[0-9]{10}\b/g; // \b indicates word boundary
 const anotherString = "The contacts in my phone book are 7646238629, 7866434684, 764623657609, 72364763476"
 
 // match 10 digit phone numbers
 const phoneNumbers = anotherString.matchAll(phoneRegex)
 console.log(Array.from(phoneNumbers).map((array) => array[0]))
+
+// 

@@ -40,7 +40,6 @@ const deletedElement = products.pop()
 // products.push(deletedElement)
 // console.log(products)
 
-
 // forEach
 const userEmails = ['Vikash@almabetter.com','ABC@example.com','XYZ@sample.com']
 
