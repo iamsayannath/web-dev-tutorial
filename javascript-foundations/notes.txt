@@ -1,0 +1,15 @@
+Prior to execution, we have something called Creation Phase
+
+Creation Phase
+    - Declaration of variables
+    - Functions are declared and initialised.
+
+
+What is a stack?
+Stack is a linear array data structure which follows a specific principle - Last In first Out
+Constraints - Add an element at the end, remove the element from the end
+Think of a stack of coins - I can put my first coin at the bottom, 
+
+Recursion is a programming paradigm where a function calls itself inside it's body but with some other arguments
+
+Callbacks are functions which are passed as an argument to other functions
