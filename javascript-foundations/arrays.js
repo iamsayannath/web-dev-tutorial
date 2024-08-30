@@ -7,6 +7,7 @@ products = [0 : 'Jeans',1:'Trousers,2:'Shirt']
 // console.log(products)
 // console.log(typeof products);
 
+<<<<<<< HEAD
 // const user = {
 //     name:'Vikash',
 //     age:30,
@@ -272,3 +273,12 @@ console.log(deckCopy.indexOf(4))
 const flatMapArray = arrayOfArrays.flatMap((element) => element[0])
 console.log(flatMapArray)
 console.log([1,[[34,5]],[10,90]].flat(1));
+=======
+let myObject = { Name : 'Ironman' ,Place :'Earth',1:2, obj:{1:2,3:4}}
+console.log(myObject.Name)
+console.log(myObject[1])
+
+let value = 10;
+console.log(value)
+
+>>>>>>> origin/main
