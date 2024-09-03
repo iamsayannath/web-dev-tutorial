@@ -1,0 +1,18 @@
+Motivation behind object oriented programming (OOP)
+
+Suppose I am Elon Musk. I own a big company called Tesla which manufactures electric cars. 
+I think of manufacturing a new type of vehicle called Tesla Cybertruck - a competitor of Isuzu(pick up truck)
+
+How do I even go about it?
+What the team does is come up with a huge design file CyberTruck which has all the specifications and recipe for creating a Tesla cybertruck
+
+On 1st jan,2023,the tesla fatcory has started manufacturing cybertrucks
+# Cybtertruck#1 - It was manufactured at 9:05 AM using the design file
+# Cybertruck#2 - It was manfucatured at 9:10 AM using the same design file.
+
+# We are trying to introduce some sort of abstraction.
+
+# in OOP, we will say that Cybtertruck#1 is an instance/object/realisation of class CyberTruck
+
+# A class is a blueprint or a template to create objects of similar properties and behaviors.
+

@@ -70,19 +70,3 @@ console.log(`The generated password is ${password}`)
 
 // Write a function to generate IPv4
 
-// Looking into the call stack
-function first(){
-    console.log("Executing the first function")
-    second()
-}
-
-function second(){
-    console.log("Executing the second function")
-    third()
-}
-
-function third(){
-    console.log("Executing the third function")
-}
-
-first()
