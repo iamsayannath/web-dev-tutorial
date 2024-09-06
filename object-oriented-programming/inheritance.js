@@ -20,7 +20,7 @@ function Alumni(name,course,enrolmentDate,graduationDate){
 
 // Inherit prototype
 Alumni.prototype = Object.create(User.prototype)
-Alumni.prototype.constructor = Alumni
+// Alumni.prototype.constructor = Alumni
 
 const alumni1 = new Alumni('Hardik','web dev','2024-02-01','2024-08-01')
 console.log(alumni1.getAgeWithAlmaBetter())
