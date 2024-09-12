@@ -24,14 +24,20 @@ function asyncFunction(){
     console.log('Ending the async operations');
 }
 
-asyncFunction()
+// asyncFunction()
 
+<<<<<<< HEAD
 
 setTimeout(() => {
     console.log('Executing immediately.');
 }, 1000)
+=======
+// setTimeout(() => {
+//     console.log('Executing immediately.');
+// }, 1000)
+>>>>>>> upstream/programming-with-javascript
 
-console.log("hello-")
+// console.log("hello-")
 // asyncFunction()
 
 // function greet() {
@@ -48,4 +54,27 @@ console.log("hello-")
 // }
   
 // setTimeout(sayHello, 2000, "John", "How are you?");
+// Simulating an asynchronous function that represents ordering food
+function orderFood() {
+    return new Promise((resolve) => {
+      console.log("Order placed. Preparing food...");
+      setTimeout(() => {
+        resolve("🍔 Your food is ready!");
+      }, 3000);  // Simulating a 3-second delay for food preparation
+    });
+  }
+
+async function dineAtRestaurant() {
+    console.log("Welcome to the restaurant!");
+  
+    // Place the order and wait for the food asynchronously
+    const food = await orderFood();  // Waits for the food to be ready, but does not block other tasks
+  
+    // Now that the food is ready, you can eat
+    console.log(food);
+  
+    console.log("Enjoy your meal!");
+  }
+  
+  dineAtRestaurant();
   

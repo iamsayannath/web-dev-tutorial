@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 name - Sayan nath
+=======
+Promise is an eventual completion of a task.
+Promise is an object in JS.
+
+A promise will have three states - pending, fulfilled and rejected
+
+A promise will have two methods - then and catch
+>>>>>>> upstream/programming-with-javascript
