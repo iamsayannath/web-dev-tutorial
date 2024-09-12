@@ -27,11 +27,11 @@ console.log(myCourse);
 // Discuss some string methods
 const myString = "Software Development"
 
-// charAt method
+// charAt method to find a charcter
 const indexChar = myString.charAt(5)
 console.log(indexChar)
 
-// includes method
+// includes method 
 const isDevPresent = myString.includes('Ware')
 console.log(isDevPresent)
 
@@ -55,5 +55,3 @@ const anotherString = "The contacts in my phone book are 7646238629, 7866434684,
 // match 10 digit phone numbers
 const phoneNumbers = anotherString.matchAll(phoneRegex)
 console.log(Array.from(phoneNumbers).map((array) => array[0]))
-
-// 

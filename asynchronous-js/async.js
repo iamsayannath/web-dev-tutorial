@@ -26,6 +26,7 @@ function asyncFunction(){
 
 asyncFunction()
 
+
 setTimeout(() => {
     console.log('Executing immediately.');
 }, 1000)

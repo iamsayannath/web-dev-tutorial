@@ -41,6 +41,8 @@ function createUser(user,callback){
     },2000)
 }
 
+// create a user and push into user object 
+// 
 // createUser({id:4,
 //     name:"Jamil Akhtar",
 //     email:"def@example.com"
